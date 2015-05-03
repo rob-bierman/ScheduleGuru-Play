@@ -1,0 +1,22 @@
+    <html>
+      <head>
+        <title>build4</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+        <script src='@routes.Assets.at("javascripts/saveDataAcrossPages.js")'></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src='@routes.Assets.at("javascripts/calendar.js")'></script>
+      </head>
+      <body id="build5body" onload="createCalendarUnderDiv('build5body');">
+        <center>
+          <h1> Build Schedule 4 (Finalize)</h1>
+        </center>
+        <section>
+          <b><u>Final Schedule</u></b>
+        </section>
+        <input id="backButton5" onclick="build5backbutton()" type="button" value="BACK"></input>
+		<input id="finalizebutton" onclick="window.location.href = '/welcome'" type="button" value="FINISH"></input> 
+      </body>
+    </html>

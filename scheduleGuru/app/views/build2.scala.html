@@ -1,0 +1,88 @@
+    <html>
+      <head>
+        <title>build1</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+        <script src='@routes.Assets.at("javascripts/saveDataAcrossPages.js")'></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      </head>
+      <body>
+        <center>
+          <h1> Build Schedule 1</h1>
+        </center>
+        <section>
+          <div class="page" id="pagePreferences">
+            <div class="preferenceArea">
+              <label for="selectMajor">Choose your major: </label>
+              <select id="selectMajor">
+                <option>Undecided (CSCI)</option>
+                <option>Anthropology (ANTH)</option>
+                <option>Art (ART)</option>
+                <option>Art History (ARTH)</option>
+                <option>Biology (BIOL)</option>
+                <option>Business Administration (BUSN)</option>
+                <option>Chemistry (CHEM)</option>
+                <option>Chinese Studies (CHIN)</option>
+                <option>Classical Languages (CLAS)</option>
+                <option>Communication (COMM)</option>
+                <option>Computer Science (CSCI)</option>
+                <option>Economics (ECON)</option>
+                <option>Engineering Science (ENGR)</option>
+                <option>English (ENGL)</option>
+                <option>French (FREN)</option>
+                <option>Geosciences (GEOS)</option>
+                <option>German Studies (GERM)</option>
+                <option>History (HIST)</option>
+                <option>Human Communication (HCOM)</option>
+                <option>Mathematics (MATH)</option>
+                <option>Music (MUSC)</option>
+                <option>Neuroscience (NEUR)</option>
+                <option>Philosophy (PHIL)</option>
+                <option>Physics (PHYS)</option>
+                <option>Psychology (PSYC)</option>
+                <option>Religion (RELI)</option>
+                <option>Russian (RUSS)</option>
+                <option>Sociology (SOCI)</option>
+                <option>Spanish (SPAN)</option>
+                <option>Theatre (THTR)</option>
+                <option>Urban Studies (URBS)</option>
+              </select>
+              <br></br>
+              <br></br>
+              <label for="radioGroupStart">What time do you want the earliest class to start? </label>
+              <br></br>
+              <input type="radio" name="radioStart" value="No Preference" checked="true">No Preference</input>
+              <input type="radio" name="radioStart" value="08:30:00">8:30</input>
+              <input type="radio" name="radioStart" value="09:30:00">9:30</input>
+              <input type="radio" name="radioStart" value="10:30:00">10:30</input>
+              <input type="radio" name="radioStart" value="11:30:00">11:30</input>
+              <input type="radio" name="radioStart" value="12:30:00">12:30</input>
+              <br></br>
+              <br></br>
+              <label for="radioGroupStart">What time do you want the latest class to end? </label>
+              <br></br>
+              <input type="radio" name="radioEnd" value="No Preference" checked="true">No Preference</input>
+              <input type="radio" name="radioEnd" value="11:20:00">11:20</input>
+              <input type="radio" name="radioEnd" value="12:20:00">12:20</input>
+              <input type="radio" name="radioEnd" value="13:20:00">1:20</input>
+              <input type="radio" name="radioEnd" value="14:20:00">2:20</input>
+              <input type="radio" name="radioEnd" value="15:55:00">3:55</input>
+              <br></br>
+              <br></br>
+              <label for="divDaysAvailable">Which days do you want to have class? </label>
+              <br></br>
+              <input type="checkbox" name="days" value="M" checked="true">Monday</input>
+              <input type="checkbox" name="days" value="T" checked="true">Tuesday</input>
+              <input type="checkbox" name="days" value="W" checked="true">Wednesday</input>
+              <input type="checkbox" name="days" value="R" checked="true">Thursday</input>
+              <input type="checkbox" name="days" value="F" checked="true">Friday</input>
+              <br></br>
+            </div>
+          </div>
+        </section>
+        <br></br>
+        <input id="nextButton2" onclick="build2button()" type="button" value="NEXT"></input>
+      </body>
+    </html>

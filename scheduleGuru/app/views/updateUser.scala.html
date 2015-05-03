@@ -1,0 +1,60 @@
+    <html>
+      <head>
+        <title>Account</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+        <script src='@routes.Assets.at("javascripts/loadAccountSettings.js")'></script>
+      </head>
+      <body onload="loadAccountSettings()">
+        <center>
+          <h1> ScheduleGuru </h1>
+        </center>
+        <!--menu bar-->
+        <nav>
+          <ul>
+            <li><a href="/welcome">Home</a></li>
+            <li><a href="/build2">Build Schedule</a></li>
+            <li><a href="/updateUser">Account</a></li>
+            <li><a href="/aboutUs">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <center>
+          <h1> Update Account Settings</h1>
+        </center>
+        <section id="changePw" class="loginForm cf">
+          <form name="updatePw" action="/updateUser/updating" method="post">
+            <h2>Change Email</h2>
+            <br/>
+	    <label>New Email: </label>
+            <input id="newEmail" name="newEmail"></input>
+            <input type="hidden" id="userID" name="userID"></input>
+            <br/>
+            <br/>
+            <h2>Change Personal Info</h2>
+	    <label>New First Name: </label>
+            <input id="newFirst" name="newFirst"></input>
+            <br/>
+            <br/>
+	    <label>New Last Name: </label>
+            <input id="newLast" name="newLast"></input>
+            <br/>
+            <br/>
+	    <h2>Change Password</h2>
+            <label>New Password: </label>
+            <input id="newPw1" name="newPw1" type="password"></input>
+            <br/>
+            <br/>
+            <label>Re-Enter New Password: </label>
+            <input id="newPw2" name="newPw2" type="password"></input>
+            <br/>
+            <br/>
+            <button type="submit">Update Account</button>
+            <br/>
+          </form>
+        </section>
+      </body>
+    </html>

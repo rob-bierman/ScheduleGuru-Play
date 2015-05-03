@@ -1,0 +1,13 @@
+table, td, th {
+    border: 1px solid #7986cb;
+}
+
+table {
+    width: 60%;
+}
+
+th {
+    text-align: center; 
+	background-color: #7986cb; 
+	color: white; 
+}

@@ -1,0 +1,37 @@
+<html>
+      <head>
+        <title>Contact</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+      </head>
+      <body>
+        <center>
+          <h1> Contact Us</h1>
+        </center>
+        <!--menu bar-->
+        <nav>
+          <ul>
+            <li><a href="/welcome">Home</a></li>
+            <li><a href="/build2">Build Schedule</a></li>
+            <li><a href="/updateUser">Account</a></li>
+            <li><a href="/aboutUs">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <form name="feedbackForm" action="MAILTO:rbierman(at)trinity.edu" method="post" enctype="text/plain">
+          Name:<br></br>
+          <input type="text" name="contact_name"></input><br></br>
+          Email:<br></br>
+          <input type="text" name="contact_email" value="your email"></input><br></br>
+          Subject:<br></br>
+          <input type="text" name="contact_message" value="type your feedback here" size="50"></input><br></br>
+		  Message:<br></br>
+          <textarea id="feedbackArea" rows="20" cols="80">
+          </textarea>
+          <br></br>
+          <input type="submit" value="Send"></input>
+        </form>
+      </body>
+</html>

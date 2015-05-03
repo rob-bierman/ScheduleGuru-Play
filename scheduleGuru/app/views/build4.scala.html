@@ -1,0 +1,35 @@
+@(ccTableHTML: IndexedSeq[scala.xml.Elem])
+    <html>
+      <head>
+        <title>build3</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+        <script src='@routes.Assets.at("javascripts/saveDataAcrossPages.js")'></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src='@routes.Assets.at("javascripts/calendar.js")'></script>
+      </head>
+      <body id="build4body" onload="createCalendarUnderDiv('build4body')">
+        <center>
+          <h1> Build Schedule 3 (CC classes)</h1>
+        </center>
+        <section>
+          <p>
+            These are the Common Curriculum classes that fit within your time preferences and do not conflict with a class you are taking for your major. Please select all you would like to take. There is an additional step where you may select non-Common Curriculum classes if you so wish.
+          </p>
+          <b><u>Understanding Cultural Heritage</u></b>
+          <div id="tbleDiv" style="width: 750px; float: left;">
+          <table id="cctable1" border="1px solid #7986cb" width="750px" font-weight="bold" textAlign="left" align="center">
+            @(ccTableHTML)
+          </table>
+        </div>
+        </section>
+        <section>
+          <div class="page" id="finalize">
+          </div>
+        </section>
+        <br></br>
+        <input id="nextButton4" onclick="build4button()" type="button" value="NEXT"></input>
+      </body>
+    </html>

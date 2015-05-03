@@ -1,0 +1,29 @@
+    @(tableHTML: IndexedSeq[scala.xml.Elem])
+    <html>
+      <head>
+        <title>build2</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="keywords" content=""></meta>
+        <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/master.css")'></link>
+        <script src='@routes.Assets.at("javascripts/saveDataAcrossPages.js")'></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src='@routes.Assets.at("javascripts/calendar.js")'></script>
+      </head>
+      <body id="body3build" onload="createCalendarUnderDiv('body3build');">
+        <center>
+          <h1> Build Schedule 2 (Classes in the Major)</h1>
+        </center>
+        <section>
+          <div id="majorClassOptions">
+            <div id="tbleDiv" style="width:750px; float:left;">
+            <table id="majortable" border="1px solid #7986cb" width="750px" font-weight="bold" textAlign="left" align="center">
+              @(tableHTML)
+            </table>
+          </div>
+          </div>
+        </section>
+        <br></br>
+        <input id="nextButton3" onclick="build3button()" type="button" value="NEXT"></input>
+      </body>
+    </html>
