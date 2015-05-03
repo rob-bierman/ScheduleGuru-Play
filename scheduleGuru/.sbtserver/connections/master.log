@@ -611,3 +611,10 @@ Taking next connection to: 33210
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 33210
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 29625@dias11.cs.trinity.edu logs at Sun May 03 17:09:43 CDT 2015, goodbye.

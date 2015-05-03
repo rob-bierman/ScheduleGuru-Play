@@ -3359,3 +3359,7 @@ Sending msg to client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad: Backgr
 Sending msg to client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad: ExecutionSuccess(156)
 Sending msg to client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
 Sending msg to client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad: BackgroundJobLogEvent(24,LogMessage(info,play - Application started (Dev)))
+Client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad closed, java.net.SocketException: Socket closed, shutting down
+Client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-b4a3f28d-6e26-4bcf-b74c-7abc26751dad
+Closing the 29625@dias11.cs.trinity.edu logs at Sun May 03 17:09:43 CDT 2015, goodbye.
