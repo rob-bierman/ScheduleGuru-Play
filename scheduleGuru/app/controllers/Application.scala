@@ -1,32 +1,35 @@
 package controllers
 
 import play.api._
+import play.api.db._
 import play.api.mvc._
+import play.api.Play.current
 
 object Application extends Controller {
+  val mydb = new MyDatabase(DB.getConnection())
 
   def welcome = Action {
-    Ok(views.html.welcome())
+    Ok(views.html.welcome(mydb))
   }
 
   def login = Action {
-    Ok(views.html.login())
+    Ok(views.html.login(mydb))
   }
 
   def aboutUs = Action {
-    Ok(views.html.aboutUs())
+    Ok(views.html.aboutUs(mydb))
   }
   
   def contact = Action {
-    Ok(views.html.contact())
+    Ok(views.html.contact(mydb))
   }
   
   def updateUser = Action {
-    Ok(views.html.updateUser())
+    Ok(views.html.updateUser(mydb))
   }
   
   def build2 = Action{
-    Ok(views.html.build2())
+    Ok(views.html.build2(mydb))
   }
   
   def build3 = Action{
@@ -44,7 +47,7 @@ object Application extends Controller {
             <td>{ a(10) }</td>
         </tr>
     }
-    Ok(views.html.build3(tableHTML))
+    Ok(views.html.build3(tableHTML, mydb))
   }
   
   def build4 = Action{
@@ -61,10 +64,10 @@ object Application extends Controller {
             <td>{ a(10) }</td>
         </tr>
     )
-    Ok(views.html.build4(ccTableHTML))
+    Ok(views.html.build4(ccTableHTML, mydb))
   }
   
   def build5 = Action{
-    Ok(views.html.build5())
+    Ok(views.html.build5(mydb))
   }
 }
