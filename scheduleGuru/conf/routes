@@ -2,20 +2,14 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Login page
-GET     /                           controllers.Application.login
-
 # Welcome page
-GET     /welcome                    controllers.Application.welcome
+GET     /                           controllers.Application.welcome
 
 # AboutUs page
 GET     /aboutUs                    controllers.Application.aboutUs
 
 # Contact page
 GET     /contact                    controllers.Application.contact
-
-# UpdateUser page
-GET     /updateUser                 controllers.Application.updateUser
 
 # Build2 page
 GET     /build2                     controllers.Application.build2
