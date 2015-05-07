@@ -6,30 +6,26 @@ import play.api.mvc._
 import play.api.Play.current
 
 object Application extends Controller {
-  val mydb = new MyDatabase(DB.getConnection())
+  //val mydb = new MyDatabase(DB.getConnection())
 
   def welcome = Action {
-    Ok(views.html.welcome(mydb))
+    Ok(views.html.welcome())
   }
 
   def login = Action {
-    Ok(views.html.login(mydb))
+    Ok(views.html.login())
   }
 
   def aboutUs = Action {
-    Ok(views.html.aboutUs(mydb))
+    Ok(views.html.aboutUs())
   }
   
   def contact = Action {
-    Ok(views.html.contact(mydb))
-  }
-  
-  def updateUser = Action {
-    Ok(views.html.updateUser(mydb))
+    Ok(views.html.contact())
   }
   
   def build2 = Action{
-    Ok(views.html.build2(mydb))
+    Ok(views.html.build2())
   }
   
   def build3 = Action{
