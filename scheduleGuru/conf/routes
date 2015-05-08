@@ -15,7 +15,7 @@ GET     /contact                    controllers.Application.contact
 GET     /build2                     controllers.Application.build2
 
 # Build3 page
-GET     /build3                     controllers.Application.build3
+GET     /build3/:major              controllers.Application.build3(major:String)
 
 # Build4 page
 GET     /build4                     controllers.Application.build4
