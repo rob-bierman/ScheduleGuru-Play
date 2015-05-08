@@ -20,6 +20,8 @@ function build2button(){
 		else
 			mwf += temp;	
 	}
+	if(tr == "") tr = "None"
+	if(mwf == "") mwf = "None"
 	localStorage.setItem("mwf",mwf);
 	localStorage.setItem("tr",tr);
 	localStorage.setItem("sT",sT);
@@ -31,7 +33,8 @@ function build2button(){
 	var splitLen = closedSplit.length;
 	var major = closedSplit[splitLen-2];
 	localStorage.setItem("major",major);
-	localStorage.setItem("majorClassesSelected",null);
+	localStorage.removeItem("majorClassesSelected");
+	localStorage.removeItem("calendarCourseArray");
 	window.location.href = "/build3/"+major;
 }
 function build3button(){
@@ -44,7 +47,11 @@ function build3button(){
 	xmlhttp.open("POST",window.location.origin+"/build4/getPreferences",false);
 	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 	xmlhttp.send("mwf="+localStorage.getItem("mwf")+"&tr="+localStorage.getItem("tr")+"&sT="+localStorage.getItem("sT")+"&eT="+localStorage.getItem("eT"));
-	window.location.href = "/build4";
+	var mwfDays = localStorage.getItem("mwf");
+	var trDays = localStorage.getItem("tr");
+	var earliest = localStorage.getItem("sT");
+	var latest = localStorage.getItem("eT");
+	window.location.href = "/build4/"+mwfDays+"/"+trDays+"/"+earliest+"/"+latest;
 }
 
 function build3backbutton(){

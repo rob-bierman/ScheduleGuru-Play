@@ -20,7 +20,7 @@ var fontBase = 100;
 var backgroundColor = "#EEEEEE";
 var divName = "";
 var calendarCourseArray = new Array();
-if(localStorage.getItem("majorClassesSelected") != "null") calendarCourseArray = JSON.parse(localStorage.getItem("majorClassesSelected"));
+if(localStorage.getItem("majorClassesSelected") != null) calendarCourseArray = JSON.parse(localStorage.getItem("majorClassesSelected"));
 var canvas = null;
 var ctx;
 

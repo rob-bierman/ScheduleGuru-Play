@@ -18,7 +18,7 @@ GET     /build2                     controllers.Application.build2
 GET     /build3/:major              controllers.Application.build3(major:String)
 
 # Build4 page
-GET     /build4                     controllers.Application.build4
+GET     /build4/:mwf/:tr/:earliest/:latest   controllers.Application.build4(mwf:String,tr:String,earliest:String,latest:String)
 
 # Build5 page
 GET     /build5                     controllers.Application.build5
